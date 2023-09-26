@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio de CSS</title>
+        <style>
+            /*
+            2) Que todos los <p> tengan un tamaño de letra igual a 42px
+            (Para esto => investigar la propiedad de css llamada font-size). */
+            p{
+                /*
+                La propiedad de css llamada font-size
+                permite establecer el tamaño de letra del texto.
+                FUENTE: https://uniwebsidad.com/libros/referencia-css2/font-size*/
+                font-size: 42px;
+            }
+
+            /*
+            3) Que todos los <em> tengan la letra negrita
+            (Para esto => investigar la propiedad de css llamada font-weight)*/
+            em{
+                /*
+                La propiedad de css llamada font-weight
+                permite establecer el grosor con el que se muestran las letras del texto.
+                FUENTE: https://uniwebsidad.com/libros/referencia-css2/font-weight*/
+                font-weight: bold;
+            }
+
+            /*
+            4) Que todos los <a> tengan el color naranja de fondo
+            (Para esto => investigar las propiedades de css llamadas background y background-color, cual es la diferencia entre ambas?) */
+            a{
+                /*
+                DIFERENCIA ENTRE LAS PROPIEDADES BACKGROUND Y BACKGROUND-COLOR
+                La propiedad background establece algunas o todas las propiedades del color y/o imagen de fondo de un elemento.
+                FUENTE: https://uniwebsidad.com/libros/referencia-css2/background
+
+                La propiedad background-color se emplea para establecer el color de fondo de un elemento.
+                FUENTE: https://uniwebsidad.com/libros/referencia-css2/background-color*/
+                background-color: rgb(250, 151, 2); /*color anaranjado en rgb*/
+            }
+        </style>
+	</head>
+	<body>
+        <!--
+        1) Que el texto del h3 sea de color violeta.
+        Los estilos en línea son declaraciones CSS que se integran en las etiquetas HTML mediante el atributo style.
+        Este método tan solo afecta al elemento en el que se integra el código.
+        FUENTE: https://www.eniun.com/como-aplicar-estilos-css-html/ -->
+		
+        <h3 style="color: violet;">Información sobre el producto</h3>
+
+		<div>
+			<p>
+				Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>. Praesent blandit nibh at felis. Sed nec diam in dolor vestibulum aliquet. Duis ullamcorper, nisi non facilisis molestie, <em>lorem sem aliquam nulla</em>, id lacinia velit mi vestibulum enim.
+		    </p>
+
+		</div>
+
+		<div>
+			<p>
+				Phasellus eu velit sed lorem sodales egestas. Ut feugiat. <span><a href="#">Donec porttitor</a>, magna eu varius luctus,</span> metus massa tristique massa, in imperdiet est velit vel magna. Phasellus erat. Duis risus. <a href="#">Maecenas dictum</a>, nibh vitae pellentesque auctor, tellus velit consectetuer tellus, tempor pretium felis tellus at metus.
+			</p>
+
+			<p>
+				Cum sociis natoque <em>penatibus et magnis</em> dis parturient montes, nascetur ridiculus mus. Proin aliquam convallis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc aliquet. Sed eu metus. Duis justo.
+			</p>
+
+            <!--
+            5) Que el ultimo <p> tenga la letra todo en mayúscula.
+            (Para esto => investigar la propiedad de css llamada text-transform)
+            
+            La propiedad text-transform Transforma el texto de un elemento para mostrarlo en mayúsculas, minúsculas o una mezcla de ambas.
+            
+            - lowercase: muestra todo el texto del elemento con letras minúsculas.
+            - uppercase: muestra todo el texto del elemento con letras mayúsculas.
+            - capitalize: muestra la primera letra de cada palabra en mayúscula y el resto de letras en minúsculas.
+            - none: muestra el texto tal y como está escrito, respetando todas las mayúsculas y minúsculas. -->
+			<p style="text-transform: uppercase;">
+				Donec facilisis blandit velit. Vestibulum nisi. Proin volutpat, <em>enim id iaculis congue</em>, orci justo ultrices tortor, <a href="#">quis lacinia eros libero in eros</a>. Sed malesuada dui vel quam. Integer at eros.
+			</p>
+		</div>
+
+	</body>
+</html>
